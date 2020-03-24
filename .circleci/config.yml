@@ -7,7 +7,7 @@ jobs:  # basic units of work in a run
         environment:  # environment variables for primary container
           MIX_ENV: test
           TEST_DB_POOL_SIZE: "${MY_CIRCLECI_POOL_SIZE}"
-      - image: circleci/mysql:8.0.4  # database image
+      - image: circleci/mysql:latest  # database image
         environment:  # environment variables for database
           MYSQL_ROOT_PASSWORD: t
     working_directory: ~  # directory where steps will run

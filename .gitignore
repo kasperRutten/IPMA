@@ -146,5 +146,8 @@ temp/
 /installer/doc
 /installer/deps
 
+# Database access credentials
+/cred*
+
 # End of https://www.gitignore.io/api/node,elixir,phoenix
 

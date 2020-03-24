@@ -2,12 +2,13 @@ use Mix.Config
 
 # Configure your database
 config :pho, Pho.Repo,
-  username: "root",
-  password: "",
-  database: "pho_dev",
-  hostname: "localhost",
+  username: System.get_env("DB_USER") || "root",
+  password: System.get_env("DB_PASSWORD") || "t",
+  database: System.get_env("DB_NAME") || "pho_dev",
+  hostname: System.get_env("DB_HOST") || "localhost",
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: (System.get_env("DB_POOL_SIZE") || "10") |> Integer.parse() |> elem(0),
+  queue_target: 5000
 
 # For development, we disable any cache and enable
 # debugging and code reloading.

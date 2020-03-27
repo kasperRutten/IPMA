@@ -30,6 +30,14 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+#Junit shit
+config :junit_formatter,
+  report_file: "report_file.xml",
+  # this is imported in your app! hence the double ..
+  report_dir: "../../test-reports",
+  print_report_file: true,
+  prepend_project_name?: true
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 

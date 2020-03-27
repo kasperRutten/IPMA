@@ -149,5 +149,8 @@ temp/
 # Database access credentials
 /cred*
 
+# test-reports have no added value!
+/test-reports
+
 # End of https://www.gitignore.io/api/node,elixir,phoenix
 

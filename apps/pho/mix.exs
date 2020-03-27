@@ -38,7 +38,8 @@ defmodule Pho.MixProject do
     [
       {:ecto_sql, "~> 3.1"},
       {:myxql, ">= 0.0.0"},
-      {:jason, "~> 1.0"}
+      {:jason, "~> 1.0"},
+      {:junit_formatter, "~> 3.0", only: [:test]}
     ]
   end
 

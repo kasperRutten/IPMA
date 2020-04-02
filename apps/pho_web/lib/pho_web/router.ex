@@ -16,7 +16,10 @@ defmodule PhoWeb.Router do
   scope "/", PhoWeb do
     pipe_through :browser
 
+    get "/login", LoginController, :login
     get "/", PageController, :index
+    get "/users/new", UserController, :new
+    post "/users", UserController, :create
   end
 
   # Other scopes may use custom stacks.

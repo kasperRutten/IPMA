@@ -20,6 +20,11 @@ defmodule PhoWeb.Router do
     get "/", PageController, :index
     get "/users/new", UserController, :new
     post "/users", UserController, :create
+    get "/users", UserController, :index
+    get "/users/:user_id", UserController, :show
+    get "/users/:user_id/edit", UserController, :edit
+    put "/users/:user_id", UserController, :update
+    delete "/users/:user_id", UserController, :delete
   end
 
   # Other scopes may use custom stacks.

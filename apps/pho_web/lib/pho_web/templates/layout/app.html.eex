@@ -12,12 +12,24 @@
     <header>
       <section class="container">
         <nav role="navigation">
+          <div>
           <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
+              <li><%= new_locale @conn, :en, "English" %></li>
+              <li><%= new_locale @conn, :nl, "Dutch" %></li>
           </ul>
+          </div>
+          <div>
+          <ul>
+            <li><a href="<%= Routes.session_path(@conn, :overview) %>"><%= gettext "Overview"%></a></li>
+            <li><a href="<%= Routes.user_path(@conn, :index) %>"><%= gettext "Users"%></a></li>
+            <li><a href="<%= Routes.session_path(@conn, :new) %>"><%= gettext "Login"%></a></li>
+            <li><a href="<%= Routes.session_path(@conn, :logout) %>"><%= gettext "Logout"%></a></li>
+            <li><a href="<%= Routes.session_path(@conn, :profile) %>"><%= gettext "Profile"%></a></li>
+          </ul>
+          </div>
         </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
+        <a href="https://en.wikipedia.org/wiki/List_of_sheep_milk_cheeses" class="phx-logo">
+          <img src="<%= Routes.static_path(@conn, "/images/sheepy.jpg") %>" alt="sheepy boy"/>
         </a>
       </section>
     </header>

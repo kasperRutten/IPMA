@@ -48,7 +48,8 @@ defmodule PhoWeb.MixProject do
       {:pho, in_umbrella: true},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:junit_formatter, "~> 3.0", only: [:test]}
+      {:junit_formatter, "~> 3.0", only: [:test]},
+      {:guardian, "~> 2.0"}
     ]
   end
 

@@ -1,0 +1,332 @@
+## This file is a PO Template file.
+##
+## "msgid"s here are often extracted from source code.
+## Add new translations manually only if they're dynamic
+## translations that can't be statically extracted.
+##
+## Run "mix gettext.extract" to bring this file up to
+## date. Leave "msgstr"s empty as changing them here as no
+## effect: edit them in PO (.po) files instead.
+msgid ""
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:4
+#: lib/pho_web/templates/user/show.html.eex:6
+msgid "Username:"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/page/index.html.eex:2
+msgid "Welcome to the sheep festival"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:26
+msgid "Here is your personal API link:"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:25
+msgid "Login"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:26
+msgid "Logout"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:23
+msgid "Overview"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:27
+msgid "Profile"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:24
+msgid "Users"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:7
+msgid "Birthday"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/new.html.eex:1
+msgid "Create user page"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:1
+msgid "Edit password page"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/edit.html.eex:1
+msgid "Edit user page"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editUsername.html.eex:1
+msgid "Edit username page"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:7
+msgid "Hashed password"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:1
+msgid "Listing animals"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:1
+msgid "Listing users"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/new.html.eex:1
+msgid "Login page"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:6
+msgid "Name"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/form.html.eex:4
+msgid "Oops, something went wrong!"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:1
+#: lib/pho_web/templates/user/show.html.eex:1
+msgid "Show user details"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/signup.html.eex:1
+msgid "Signup page"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:8
+msgid "Type"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editUsername.html.eex:6
+#: lib/pho_web/templates/session/new.html.eex:6 lib/pho_web/templates/session/signup.html.eex:6
+#: lib/pho_web/templates/user/form.html.eex:8 lib/pho_web/templates/user/index.html.eex:6
+msgid "Username"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:24
+#: lib/pho_web/templates/user/index.html.eex:20
+msgid "Are you sure?"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/show.html.eex:10
+msgid "Role:"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:23
+#: lib/pho_web/templates/user/index.html.eex:19
+msgid "Delete"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:7
+msgid "Edit password"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:6
+msgid "Edit username"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:16
+msgid "Generate new API key"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:22
+#: lib/pho_web/templates/user/index.html.eex:17
+msgid "Show"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/edit.html.eex:5
+#: lib/pho_web/templates/user/new.html.eex:6 lib/pho_web/templates/user/show.html.eex:14
+msgid "Back"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:20
+#: lib/pho_web/templates/session/editUsername.html.eex:11 lib/pho_web/templates/user/form.html.eex:21
+msgid "Save"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/signup.html.eex:24
+msgid "Sign up"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/new.html.eex:20
+msgid "Create new user"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:18
+msgid "Edit"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/new.html.eex:18
+msgid "Log in"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:27
+msgid "New user"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:131
+#: lib/pho_web/controllers/session_controller.ex:131
+msgid "Current password is wrong"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:126
+#: lib/pho_web/controllers/session_controller.ex:126
+msgid "Password confirmation doesn't match password"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:19
+#: lib/pho_web/controllers/session_controller.ex:19
+msgid "User created successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:51
+#: lib/pho_web/controllers/session_controller.ex:51
+msgid "Welcome back!"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:121
+#: lib/pho_web/controllers/session_controller.ex:121
+msgid "Password must be filled in."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:116
+#: lib/pho_web/controllers/session_controller.ex:116
+msgid "Password updated successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:88
+#: lib/pho_web/controllers/session_controller.ex:88
+msgid "Username updated successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:93
+#: lib/pho_web/controllers/session_controller.ex:93
+msgid "Username must be filled in."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:58
+#: lib/pho_web/controllers/session_controller.ex:58
+msgid "Invalid credentials, try again."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:45
+#: lib/pho_web/controllers/apikey_controller.ex:45 lib/pho_web/controllers/apikey_controller.ex:71
+#: lib/pho_web/controllers/apikey_controller.ex:71 lib/pho_web/plugs/authorization_plug.ex:18
+#: lib/pho_web/plugs/authorization_plug.ex:18
+msgid "Unauthorized access"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:33
+#: lib/pho_web/controllers/apikey_controller.ex:33 lib/pho_web/controllers/apikey_controller.ex:56
+#: lib/pho_web/controllers/apikey_controller.ex:56
+msgid "No such API key ID"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/showFalseApikey.html.eex:1
+msgid "That's too bad"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:11
+msgid "API key"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:5
+msgid "Current password"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:10
+#: lib/pho_web/templates/session/new.html.eex:12 lib/pho_web/templates/session/signup.html.eex:12
+#: lib/pho_web/templates/user/form.html.eex:12
+msgid "Password"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:15
+#: lib/pho_web/templates/session/signup.html.eex:18
+msgid "Password confirmation"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/user/form.html.eex:16
+msgid "Role"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:22
+#: lib/pho_web/controllers/apikey_controller.ex:22 lib/pho_web/controllers/apikey_controller.ex:88
+#: lib/pho_web/controllers/apikey_controller.ex:88
+msgid "API key created succesfully."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:67
+#: lib/pho_web/controllers/apikey_controller.ex:67
+msgid "API key deleted successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:14
+#: lib/pho_web/controllers/apikey_controller.ex:14 lib/pho_web/controllers/apikey_controller.ex:80
+#: lib/pho_web/controllers/apikey_controller.ex:80
+msgid "API key name can't be blank."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/guardian/errorhandler.ex:9
+msgid "Login or register first"
+msgstr ""

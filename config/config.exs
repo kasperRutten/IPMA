@@ -25,13 +25,21 @@ config :pho_web, PhoWeb.Endpoint,
   pubsub: [name: PhoWeb.PubSub, adapter: Phoenix.PubSub.PG2],
   live_view: [signing_salt: "jD1JG4LG"]
 
+config :pho_web, PhoWeb.Guardian,
+  issuer: "pho_web",
+  secret_key: "9JcUGB0m0OSq2XMMuckCR8BDiljg4Fv59ppjeSh9ssgcUDGmMXRFMrD6bCnXkzYU" # generated with mix guardian.gen.secret
+
+config :pho_web, PhoWeb.Gettext,
+  locales: ~w(en nl), # ja stands for Japanese.
+  default_locale: "en"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
 #Junit shit
-config :junit_formatter,
+config :pho_web,
   report_file: "report_file.xml",
   # this is imported in your app! hence the double ..
   report_dir: "../../test-reports",

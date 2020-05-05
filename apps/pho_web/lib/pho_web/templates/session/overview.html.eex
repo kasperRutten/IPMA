@@ -1,0 +1,39 @@
+<body onload="startTime()">
+<div id="txt"></div>
+<h1><%= gettext "Listing animals"%></h1>
+
+<table>
+    <thead>
+        <tr>
+            <th><%= gettext "Name"%></th>
+            <th><%= gettext "Birthday"%></th>
+            <th><%= gettext "Type"%></th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= for animal <- @animals do %>
+        <tr>
+            <td><%= animal.name %></td>
+            <td><%= animal.birthday %></td>
+            <td><%= animal.type %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>

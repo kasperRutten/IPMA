@@ -1,0 +1,2 @@
+<h1><%= gettext "That's too bad" %></h1>
+<%= @errorMessage%>

@@ -1,20 +1,15 @@
-<h1>Show User details</h1>
+<h1><%= gettext "Show user details"%></h1>
 
-<ul>
-    <li>
-        <strong>First name:</strong>
-        <%= @user.first_name %>
-    </li>
-
-    <li>
-        <strong>Last name:</strong>
-        <%= @user.last_name %>
-    </li>
-
-    <li>
-        <strong>date of birth:</strong>
-        <%= @user.date_of_birth %>
-    </li>
-</ul>
-
-<%= link "Back", to: Routes.user_path(@conn, :index) %>
+ 
+    <ul>
+        <li>
+        <strong><%= gettext "Username:"%></strong>
+        <%= @user.username %>
+        </li>
+        <li>
+        <strong><%= gettext "Role:"%></strong>
+        <%= @user.role %>
+        </li>
+    </ul>
+    <span><%= link gettext("Back"), to: Routes.user_path(@conn, :index) %></span>
+    

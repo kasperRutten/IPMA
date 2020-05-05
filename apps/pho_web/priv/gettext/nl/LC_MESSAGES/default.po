@@ -1,0 +1,333 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:4
+#: lib/pho_web/templates/user/show.html.eex:6
+msgid "Username:"
+msgstr "Gebruikersnaam:"
+
+#, elixir-format
+#: lib/pho_web/templates/page/index.html.eex:2
+msgid "Welcome to the sheep festival"
+msgstr "Welkom op het schaap festival"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:26
+msgid "Here is your personal API link:"
+msgstr "Hier is uw persoonlijke API link:"
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:25
+msgid "Login"
+msgstr "Inloggen"
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:26
+msgid "Logout"
+msgstr "Uitloggen"
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:23
+msgid "Overview"
+msgstr "Overzicht"
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:27
+msgid "Profile"
+msgstr "Profiel"
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:24
+msgid "Users"
+msgstr "Gebruikers"
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:7
+msgid "Birthday"
+msgstr "Verjaardag"
+
+#, elixir-format
+#: lib/pho_web/templates/user/new.html.eex:1
+msgid "Create user page"
+msgstr "Gebruiker creatie pagina"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:1
+msgid "Edit password page"
+msgstr "Configureer wachtwoord pagina"
+
+#, elixir-format
+#: lib/pho_web/templates/user/edit.html.eex:1
+msgid "Edit user page"
+msgstr "Configureer gebruiker pagina"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editUsername.html.eex:1
+msgid "Edit username page"
+msgstr "Configureer gebruikersnaam pagina"
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:7
+msgid "Hashed password"
+msgstr "Gehasht wachtwoord"
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:1
+msgid "Listing animals"
+msgstr "Lijst van dieren"
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:1
+msgid "Listing users"
+msgstr "Lijst van gebruikers"
+
+#, elixir-format
+#: lib/pho_web/templates/session/new.html.eex:1
+msgid "Login page"
+msgstr "Login pagina"
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:6
+msgid "Name"
+msgstr "Naam"
+
+#, elixir-format
+#: lib/pho_web/templates/user/form.html.eex:4
+msgid "Oops, something went wrong!"
+msgstr "Oeps, er ging iets mis!"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:1
+#: lib/pho_web/templates/user/show.html.eex:1
+msgid "Show user details"
+msgstr "Toon gebruikersgegevens"
+
+#, elixir-format
+#: lib/pho_web/templates/session/signup.html.eex:1
+msgid "Signup page"
+msgstr "Registratie pagina"
+
+#, elixir-format
+#: lib/pho_web/templates/session/overview.html.eex:8
+msgid "Type"
+msgstr "Type"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editUsername.html.eex:6
+#: lib/pho_web/templates/session/new.html.eex:6 lib/pho_web/templates/session/signup.html.eex:6
+#: lib/pho_web/templates/user/form.html.eex:8 lib/pho_web/templates/user/index.html.eex:6
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:24
+#: lib/pho_web/templates/user/index.html.eex:20
+msgid "Are you sure?"
+msgstr "Bent u zeker?"
+
+#, elixir-format
+#: lib/pho_web/templates/user/show.html.eex:10
+msgid "Role:"
+msgstr "Rol:"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:23
+#: lib/pho_web/templates/user/index.html.eex:19
+msgid "Delete"
+msgstr "Verwijder"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:7
+msgid "Edit password"
+msgstr "Configureer wachtwoord"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:6
+msgid "Edit username"
+msgstr "Configureer gebruikersnaam"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:16
+msgid "Generate new API key"
+msgstr "Genereer nieuwe API sleutel"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:22
+#: lib/pho_web/templates/user/index.html.eex:17
+msgid "Show"
+msgstr "Toon"
+
+#, elixir-format
+#: lib/pho_web/templates/user/edit.html.eex:5
+#: lib/pho_web/templates/user/new.html.eex:6 lib/pho_web/templates/user/show.html.eex:14
+msgid "Back"
+msgstr "Terug"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:20
+#: lib/pho_web/templates/session/editUsername.html.eex:11 lib/pho_web/templates/user/form.html.eex:21
+msgid "Save"
+msgstr "Opslaan"
+
+#, elixir-format
+#: lib/pho_web/templates/session/signup.html.eex:24
+msgid "Sign up"
+msgstr "Registreer"
+
+#, elixir-format
+#: lib/pho_web/templates/session/new.html.eex:20
+msgid "Create new user"
+msgstr "Maak nieuwe gebruiker aan"
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:18
+msgid "Edit"
+msgstr "Configureer"
+
+#, elixir-format
+#: lib/pho_web/templates/session/new.html.eex:18
+msgid "Log in"
+msgstr "Inloggen"
+
+#, elixir-format
+#: lib/pho_web/templates/user/index.html.eex:27
+msgid "New user"
+msgstr "Nieuwe gebruiker"
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:131
+#: lib/pho_web/controllers/session_controller.ex:131
+msgid "Current password is wrong"
+msgstr "Huidig wachtwoord is fout"
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:126
+#: lib/pho_web/controllers/session_controller.ex:126
+msgid "Password confirmation doesn't match password"
+msgstr "Wachtwoord confirmatie klopt niet"
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:19
+#: lib/pho_web/controllers/session_controller.ex:19
+msgid "User created successfully."
+msgstr "Gebruiker is succesvol gemaakt."
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:51
+#: lib/pho_web/controllers/session_controller.ex:51
+msgid "Welcome back!"
+msgstr "Welkom terug!"
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:121
+#: lib/pho_web/controllers/session_controller.ex:121
+msgid "Password must be filled in."
+msgstr "Wachtwoord moet ingvuld worden."
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:116
+#: lib/pho_web/controllers/session_controller.ex:116
+msgid "Password updated successfully."
+msgstr "Wachtwoord is succesvol bijgewerkt."
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:88
+#: lib/pho_web/controllers/session_controller.ex:88
+msgid "Username updated successfully."
+msgstr "Gebruikersnaam is succesvol bijgewerkt."
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:93
+#: lib/pho_web/controllers/session_controller.ex:93
+msgid "Username must be filled in."
+msgstr "Gebruikersnaam moet ingevuld worden."
+
+#, elixir-format
+#: lib/pho_web/controllers/session_controller.ex:58
+#: lib/pho_web/controllers/session_controller.ex:58
+msgid "Invalid credentials, try again."
+msgstr "Foutieve inloggegevens, probeer opnieuw."
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:45
+#: lib/pho_web/controllers/apikey_controller.ex:45 lib/pho_web/controllers/apikey_controller.ex:71
+#: lib/pho_web/controllers/apikey_controller.ex:71 lib/pho_web/plugs/authorization_plug.ex:18
+#: lib/pho_web/plugs/authorization_plug.ex:18
+msgid "Unauthorized access"
+msgstr "Onbevoegde toegang"
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:33
+#: lib/pho_web/controllers/apikey_controller.ex:33 lib/pho_web/controllers/apikey_controller.ex:56
+#: lib/pho_web/controllers/apikey_controller.ex:56
+msgid "No such API key ID"
+msgstr "Zo is er geen API sleutel ID"
+
+#, elixir-format
+#: lib/pho_web/templates/session/showFalseApikey.html.eex:1
+msgid "That's too bad"
+msgstr "Dat is jammer"
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:11
+msgid "API key"
+msgstr "API sleutel"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:5
+msgid "Current password"
+msgstr "Huidig wachtwoord"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:10
+#: lib/pho_web/templates/session/new.html.eex:12 lib/pho_web/templates/session/signup.html.eex:12
+#: lib/pho_web/templates/user/form.html.eex:12
+msgid "Password"
+msgstr "Wachtwoord"
+
+#, elixir-format
+#: lib/pho_web/templates/session/editPassword.html.eex:15
+#: lib/pho_web/templates/session/signup.html.eex:18
+msgid "Password confirmation"
+msgstr "Wachtwoord confirmatie"
+
+#, elixir-format
+#: lib/pho_web/templates/user/form.html.eex:16
+msgid "Role"
+msgstr "Rol"
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:22
+#: lib/pho_web/controllers/apikey_controller.ex:22 lib/pho_web/controllers/apikey_controller.ex:88
+#: lib/pho_web/controllers/apikey_controller.ex:88
+msgid "API key created succesfully."
+msgstr "API sleutel is succesvol gemaakt."
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:67
+#: lib/pho_web/controllers/apikey_controller.ex:67
+msgid "API key deleted successfully."
+msgstr "API sleutel succesvol verwijderd."
+
+#, elixir-format
+#: lib/pho_web/controllers/apikey_controller.ex:14
+#: lib/pho_web/controllers/apikey_controller.ex:14 lib/pho_web/controllers/apikey_controller.ex:80
+#: lib/pho_web/controllers/apikey_controller.ex:80
+msgid "API key name can't be blank."
+msgstr "API sleutel naam kan niet leeg zijn."
+
+#, elixir-format
+#: lib/pho_web/guardian/errorhandler.ex:9
+msgid "Login or register first"
+msgstr "Log in of registreer eerst"

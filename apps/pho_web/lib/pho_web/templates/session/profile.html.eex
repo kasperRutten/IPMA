@@ -1,0 +1,27 @@
+<h1><%= gettext "Show user details"%></h1>
+
+ 
+    <p><strong><%= gettext "Username:"%></strong>
+    <%= @user.username %></p>
+    <p><span><%= link gettext("Edit username"), to: Routes.session_path(@conn, :editUsername) %></span></p>
+    <p><span><%= link gettext("Edit password"), to: Routes.session_path(@conn, :editPassword) %></span></p>
+<%= form_for @changeset, Routes.apikey_path(@conn, :new), fn f -> %>
+
+<div class="form-group">
+    <%= label f, gettext("API key"), class: "control-label" %>
+    <%= text_input f, :API_key, class: "form-control" %>
+    <%= error_tag f, :API_key %>
+</div>
+<div class="form-group">
+    <%= submit gettext "Generate new API key", class: "btn btn-primary" %>
+</div>
+
+<% end %>
+<%= for apikey <- @apikeys do %>
+            <p><%= apikey.name %>
+                <span><%= link(gettext("Show"), to: Routes.apikey_path(@conn, :show, apikey.id), target: "_blank") %></span>
+                <span><%= link gettext("Delete"), to: Routes.apikey_path(@conn, :delete, apikey.id),
+                    method: :delete, data: [confirm: gettext "Are you sure?"] %></span></p>
+<% end %>
+<p><%= gettext "Here is your personal API link:"%> 
+    <a href="<%= Routes.session_path(@conn, :profile) %>">localhost:4001/api/users/<%= @user.id %>/animals </a></p>

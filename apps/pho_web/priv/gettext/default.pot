@@ -27,32 +27,32 @@ msgid "Here is your personal API link:"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/layout/app.html.eex:25
+#: lib/pho_web/templates/layout/app.html.eex:28
 msgid "Login"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/layout/app.html.eex:26
+#: lib/pho_web/templates/layout/app.html.eex:29
 msgid "Logout"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/layout/app.html.eex:23
+#: lib/pho_web/templates/layout/app.html.eex:26
 msgid "Overview"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/layout/app.html.eex:27
+#: lib/pho_web/templates/layout/app.html.eex:30
 msgid "Profile"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/layout/app.html.eex:24
+#: lib/pho_web/templates/layout/app.html.eex:27
 msgid "Users"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/overview.html.eex:7
+#: lib/pho_web/templates/session/overview.html.eex:9
 msgid "Birthday"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgid "Hashed password"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/overview.html.eex:1
+#: lib/pho_web/templates/session/overview.html.eex:3
 msgid "Listing animals"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgid "Login page"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/overview.html.eex:6
+#: lib/pho_web/templates/session/overview.html.eex:8
 msgid "Name"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgid "Signup page"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/overview.html.eex:8
+#: lib/pho_web/templates/session/overview.html.eex:10
 msgid "Type"
 msgstr ""
 
@@ -329,4 +329,14 @@ msgstr ""
 #, elixir-format
 #: lib/pho_web/guardian/errorhandler.ex:9
 msgid "Login or register first"
+msgstr ""
+
+#, elixir-format
+#: lib/pho/user_context/user.ex:28
+msgid "User with the same username already exists."
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/layout/app.html.eex:14
+msgid "Project of Kasper Rutten"
 msgstr ""

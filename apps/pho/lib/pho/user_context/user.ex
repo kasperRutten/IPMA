@@ -1,6 +1,7 @@
 defmodule Pho.UserContext.User do
   use Ecto.Schema
   import Ecto.Changeset
+  import PhoWeb.Gettext
 
   @acceptable_roles ["Admin", "User"]
 
@@ -24,7 +25,7 @@ defmodule Pho.UserContext.User do
     |> validate_required([:username, :password, :role])
     |> unique_constraint(:username, name: :users_username_index,
       message:
-        "User with the same username already exists."
+        gettext("User with the same username already exists.")
     )
     |> validate_inclusion(:role, @acceptable_roles)
     |> validate_confirmation(:password)

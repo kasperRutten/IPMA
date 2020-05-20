@@ -10,6 +10,9 @@
   </head>
   <body>
     <header>
+    <h1>
+          <%= gettext "Project of Kasper Rutten"%>
+          </h1>
       <section class="container">
         <nav role="navigation">
           <div>

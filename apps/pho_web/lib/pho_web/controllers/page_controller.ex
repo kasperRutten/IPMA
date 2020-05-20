@@ -7,9 +7,14 @@ defmodule PhoWeb.PageController do
 
   def index(conn, _params) do
     user = Guardian.Plug.current_resource(conn)
-    user_with_loaded_animals = AnimalContext.load_animals(user)
-    animals = user_with_loaded_animals.animals
-    render(conn, "overview.html", animals: animals)
+    if user == nil do
+      noAnimals = Map.new()
+      render(conn, "overview.html", animals: noAnimals)
+    else
+      user_with_loaded_animals = AnimalContext.load_animals(user)
+      animals = user_with_loaded_animals.animals
+      render(conn, "overview.html", animals: animals)
+    end
   end
 
   def user_index(conn, _params) do

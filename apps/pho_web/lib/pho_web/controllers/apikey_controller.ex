@@ -7,18 +7,20 @@ defmodule PhoWeb.ApikeyController do
 
     plug :put_view, PhoWeb.SessionView
 
-    def new(conn, %{"user" => %{"API_key" => name}}) do
+    def new(conn, %{"user" => %{"API_key" => name, "is_writeable" => isWriteable}}) do
       if String.length(name) == 0 do
         IO.puts "its blank"
         conn
         |> put_flash(:error, gettext("API key name can't be blank."))
         |> redirect(to: Routes.session_path(conn, :profile))
       else
+        IO.puts isWriteable
         user = Guardian.Plug.current_resource(conn)
         changeset = UserContext.change_user(user)
-        _apikey =  ApikeyContext.create_apikey(name, user)
+        _apikey =  ApikeyContext.create_apikey(name, isWriteable, user)
         user_with_loaded_apikeys = ApikeyContext.load_apikeys(user)
         conn
+        |> assign(:iswriteable, isWriteable)
         |> put_flash(:info, gettext("API key created succesfully."))
         |> render("profile.html", changeset: changeset, user: user, apikeys: user_with_loaded_apikeys.apikeys)
         end
@@ -73,7 +75,7 @@ defmodule PhoWeb.ApikeyController do
           end
     end
 
-    def update(conn, %{"user" => %{"API_key" => name}}) do
+    def update(conn, %{"user" => %{"API_key" => name, "is_writeable" => isWriteable}}) do
       if String.length(name) == 0 do
         IO.puts "its blank"
         conn
@@ -82,7 +84,7 @@ defmodule PhoWeb.ApikeyController do
       else
         user = Guardian.Plug.current_resource(conn)
         changeset = UserContext.change_user(user)
-        _apikey =  ApikeyContext.create_apikey(name, user)
+        _apikey =  ApikeyContext.create_apikey(name, isWriteable, user)
         user_with_loaded_apikeys = ApikeyContext.load_apikeys(user)
         conn
         |> put_flash(:info, gettext("API key created succesfully."))

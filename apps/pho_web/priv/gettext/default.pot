@@ -22,7 +22,7 @@ msgid "Welcome to the sheep festival"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/profile.html.eex:26
+#: lib/pho_web/templates/session/profile.html.eex:31
 msgid "Here is your personal API link:"
 msgstr ""
 
@@ -130,7 +130,7 @@ msgid "Username"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/profile.html.eex:24
+#: lib/pho_web/templates/session/profile.html.eex:29
 #: lib/pho_web/templates/user/index.html.eex:20
 msgid "Are you sure?"
 msgstr ""
@@ -141,7 +141,7 @@ msgid "Role:"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/profile.html.eex:23
+#: lib/pho_web/templates/session/profile.html.eex:28
 #: lib/pho_web/templates/user/index.html.eex:19
 msgid "Delete"
 msgstr ""
@@ -157,12 +157,12 @@ msgid "Edit username"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/profile.html.eex:16
+#: lib/pho_web/templates/session/profile.html.eex:21
 msgid "Generate new API key"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/templates/session/profile.html.eex:22
+#: lib/pho_web/templates/session/profile.html.eex:27
 #: lib/pho_web/templates/user/index.html.eex:17
 msgid "Show"
 msgstr ""
@@ -259,17 +259,17 @@ msgid "Invalid credentials, try again."
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/controllers/apikey_controller.ex:45
-#: lib/pho_web/controllers/apikey_controller.ex:45 lib/pho_web/controllers/apikey_controller.ex:71
-#: lib/pho_web/controllers/apikey_controller.ex:71 lib/pho_web/plugs/authorization_plug.ex:18
+#: lib/pho_web/controllers/apikey_controller.ex:47
+#: lib/pho_web/controllers/apikey_controller.ex:47 lib/pho_web/controllers/apikey_controller.ex:73
+#: lib/pho_web/controllers/apikey_controller.ex:73 lib/pho_web/plugs/authorization_plug.ex:18
 #: lib/pho_web/plugs/authorization_plug.ex:18
 msgid "Unauthorized access"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/controllers/apikey_controller.ex:33
-#: lib/pho_web/controllers/apikey_controller.ex:33 lib/pho_web/controllers/apikey_controller.ex:56
-#: lib/pho_web/controllers/apikey_controller.ex:56
+#: lib/pho_web/controllers/apikey_controller.ex:35
+#: lib/pho_web/controllers/apikey_controller.ex:35 lib/pho_web/controllers/apikey_controller.ex:58
+#: lib/pho_web/controllers/apikey_controller.ex:58
 msgid "No such API key ID"
 msgstr ""
 
@@ -307,22 +307,22 @@ msgid "Role"
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/controllers/apikey_controller.ex:22
-#: lib/pho_web/controllers/apikey_controller.ex:22 lib/pho_web/controllers/apikey_controller.ex:88
-#: lib/pho_web/controllers/apikey_controller.ex:88
+#: lib/pho_web/controllers/apikey_controller.ex:24
+#: lib/pho_web/controllers/apikey_controller.ex:24 lib/pho_web/controllers/apikey_controller.ex:90
+#: lib/pho_web/controllers/apikey_controller.ex:90
 msgid "API key created succesfully."
 msgstr ""
 
 #, elixir-format
-#: lib/pho_web/controllers/apikey_controller.ex:67
-#: lib/pho_web/controllers/apikey_controller.ex:67
+#: lib/pho_web/controllers/apikey_controller.ex:69
+#: lib/pho_web/controllers/apikey_controller.ex:69
 msgid "API key deleted successfully."
 msgstr ""
 
 #, elixir-format
 #: lib/pho_web/controllers/apikey_controller.ex:14
-#: lib/pho_web/controllers/apikey_controller.ex:14 lib/pho_web/controllers/apikey_controller.ex:80
-#: lib/pho_web/controllers/apikey_controller.ex:80
+#: lib/pho_web/controllers/apikey_controller.ex:14 lib/pho_web/controllers/apikey_controller.ex:82
+#: lib/pho_web/controllers/apikey_controller.ex:82
 msgid "API key name can't be blank."
 msgstr ""
 
@@ -339,4 +339,9 @@ msgstr ""
 #, elixir-format
 #: lib/pho_web/templates/layout/app.html.eex:14
 msgid "Project of Kasper Rutten"
+msgstr ""
+
+#, elixir-format
+#: lib/pho_web/templates/session/profile.html.eex:16
+msgid "Does this key have writing permissions?"
 msgstr ""

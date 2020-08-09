@@ -13,6 +13,11 @@
     <%= error_tag f, :API_key %>
 </div>
 <div class="form-group">
+    <%= label f, :is_writeable, gettext("Does this key have writing permissions?"), class: "control-label" %>
+    <%= checkbox f, :is_writeable, class: "form-control" %>
+    <%= error_tag f, :is_writeable %>
+</div>
+<div class="form-group">
     <%= submit gettext "Generate new API key", class: "btn btn-primary" %>
 </div>
 

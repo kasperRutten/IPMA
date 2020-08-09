@@ -14,8 +14,8 @@ defmodule Pho.ApikeyContext do
   
     def get_apikey!(id), do: Repo.get!(Apikey, id)
   
-    def create_apikey(name, %User{} = user) do
-        attrs = %{name: name, key: Randomizer.randomizer(30)}
+    def create_apikey(name, isWriteable, %User{} = user) do
+        attrs = %{name: name, key: Randomizer.randomizer(30), isWriteable: isWriteable}
         %Apikey{}
       |> Apikey.create_changeset(attrs, user)
       |> Repo.insert()
@@ -39,6 +39,18 @@ defmodule Pho.ApikeyContext do
       keylist = Enum.map(apikeys.apikeys, & &1.key)
       bool = Enum.any?(keylist, fn x -> x == List.first(get_req_header(conn, "apikeytoken")) end)
       {:ok, bool}
+    end
+
+    def set_writeable(conn, apikeys) do
+      keylist = Enum.map(apikeys.apikeys, & &1.key)
+      name = Enum.find(keylist, fn x -> x == List.first(get_req_header(conn, "apikeytoken")) end)
+      apikeylist = Repo.all(Apikey)
+      apikey = Enum.find(apikeylist, fn x -> x.key == name end)
+      conn = assign(conn, :iswriteable, apikey.isWriteable)
+    end
+
+    def verify_isWriteable!(conn) do
+      {:ok, conn.assigns.iswriteable}
     end
 
     def verify_user!(conn, apikeys, apikey_id) do
